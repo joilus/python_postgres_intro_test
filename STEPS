@@ -1,0 +1,10 @@
+Watching this intro guide:
+
+https://www.youtube.com/watch?v=i04Rgnn2XbI&ab_channel=ParwizForogh
+
+1. We create a free postgresql database on api.elephantsql.com (can be done other places)
+2. We download pgAdmin and enter the information of the database
+
+go to servers-->[name of db]-->databases--> find the relevant one (yellow color) --> schemas --> public
+
+
