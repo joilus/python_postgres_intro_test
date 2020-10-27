@@ -17,7 +17,13 @@ print("Database connected successfully")
 
 cur = conn.cursor()
 
-cur.execute("INSERT INTO Employee (ID, NAME, EMAIL) VALUES(2, 'Johan Emil', 'test@test.test')")
+cur.execute("""
+DELETE
+FROM
+    Employee
+WHERE
+    ID = 1
+""")
 conn.commit()
-print("Data inserted successfully")
-conn.close()
+print("Data deleted successfully")
+print(f"Total rows affected: {str(cur.rowcount)}")
